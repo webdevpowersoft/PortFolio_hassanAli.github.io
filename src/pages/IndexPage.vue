@@ -50,7 +50,6 @@
         <q-img src="~assets/has.jpg" />
       </div>
     </div>
-    <!-- <q-img :class="$q.dark.isActive ? 'bg-grey-9' : 'bg-grey-6'" src="~assets/body.png"> -->
     <div class="row q-mb-xl gt-xs">
       <div class="col-md-6 col-sm-12 col-xs-12">
         <q-img src="~assets/hassan.jpg" />
@@ -144,7 +143,6 @@
         </div>
       </div>
       <div class="col-md-4 col-sm-12 col-xs-12 q-mt-xl">
-        <!-- <q-img width="130px" src="~assets/design.png" class="opacit" /> -->
         <div class="q-pl-sm shadow-7"
           style="border: 1px solid white; width: 300px; height:250px; background-color:#FAF8FF; padding-top:20px; border-radius: 20px; margin-top:30px;">
           <div class="client-info text-h1 text-weight-bolder text-secondary bg-transparent" style="z-index: 1">
@@ -158,7 +156,8 @@
       </div>
     </div>
     <div class="text-center q-mt-xl bg-transparent">
-      <div class="text-h4 uper font-header text-weight-bold" :class="$q.dark.isActive ? 'text-white' : 'text-black'">Service
+      <div class="text-h4 uper font-header text-weight-bold" :class="$q.dark.isActive ? 'text-white' : 'text-black'">
+        Service
         Offers</div>
     </div>
     <div class="row container q-col-gutter-md q-my-xl bg-transparent">
@@ -190,16 +189,106 @@
       </div>
     </div>
     <div class="text-center q-my-xl bg-transparent">
-      <div class="text-h4 uper q-mt-xl text-weight-bold" :class="$q.dark.isActive ? 'text-white' : 'text-black'">Team
+      <div class="text-h4 uper q-mt-xl text-weight-bold" :class="$q.dark.isActive ? 'text-white' : 'text-black'">My
+        Recent Work
       </div>
     </div>
-    <!-- <div class="container bg-transparent q-pt-md">
-      <CarousalComponent />
-    </div> -->
+    <!-- ------------------------------------------------- -->
+    <div class="container">
+      <div class="row q-mt-md q-col-gutter-xl">
+
+        <div class="col-md-6 col-sm-12 col-xs-12">
+          <q-img class="borderimg shadow-5" src="~assets/advozap.png" />
+        </div>
+        <div class="col-md-6 col-sm-12 col-xs-12">
+          <div style="text-decoration: underline;" class="text-h5 text-weight-bold font-header"
+            :class="$q.dark.isActive ? 'text-secondary' : ''">Advoza
+            Template</div>
+          <div class="text-subtitle1 q-mt-sm text-weight-light font-text"
+            :class="$q.dark.isActive ? 'text-grey-4' : 'text-grey-6'">We're proud that our law firm offers top-notch
+            legal services for nationwide affordable pricing! With us you'll never feel like the lawyers are just
+            robbers in suits, besides, we win 98% of all cases</div>
+          <div class="text-subtitle2 text-weight-light q-mt-sm" :class="$q.dark.isActive ? 'text-white' : 'textgrey-9'">
+            Vuejs 3</div>
+          <div class="text-subtitle2 text-weight-light" :class="$q.dark.isActive ? 'text-white' : 'textgrey-9'">Quasar
+            Framework</div>
+          <q-btn unelevated no-caps class="q-px-md q-py-sm q-mt-md btn2 text-subtitle1 text-weight-light"
+            href="https://advoza.netlify.app/#/" target="_blank" icon="eva-external-link-outline"
+            label="Visit Website" />
+        </div>
+      </div>
+
+      <div class="row q-mt-md q-col-gutter-xl gt-xs">
+        <div class="col-md-6 col-sm-12 col-xs-12">
+          <div style="text-decoration: underline;" class="text-h5 text-weight-bold font-header"
+            :class="$q.dark.isActive ? 'text-secondary' : ''">
+            MultiKart
+            Template</div>
+          <div class="text-subtitle1 q-mt-sm text-weight-light font-text"
+            :class="$q.dark.isActive ? 'text-grey-4' : 'text-grey-6'">Provided a customer services portal for MultiKart
+            where they manage direct deals, accounts, users, finance etc.</div>
+          <div class="text-subtitle2 text-weight-light q-mt-md" :class="$q.dark.isActive ? 'text-white' : 'textgrey-9'">
+            Vuejs 3</div>
+          <div class="text-subtitle2 text-weight-light" :class="$q.dark.isActive ? 'text-white' : 'textgrey-9'">Quasar
+            Framework</div>
+          <q-btn unelevated no-caps class="q-px-md q-py-sm q-mt-md btn2 text-subtitle1 text-weight-light"
+            href="https://multicart.netlify.app/#/" target="_blank" icon="eva-external-link-outline"
+            label="Visit Website" />
+        </div>
+        <div class="col-md-6 col-sm-12 col-xs-12">
+          <q-img class="borderimg shadow-5" src="~assets/multikartp.png" />
+        </div>
+      </div>
+
+      <div class="row q-mt-md q-col-gutter-xl lt-sm">
+        <div class="col-md-6 col-sm-12 col-xs-12">
+          <q-img class="borderimg shadow-5" src="~assets/multikartp.png" />
+        </div>
+        <div class="col-md-6 col-sm-12 col-xs-12">
+          <div style="text-decoration: underline;" class="text-h5 text-weight-bold font-header"
+            :class="$q.dark.isActive ? 'text-secondary' : ''">
+            MultiKart
+            Template</div>
+          <div class="text-subtitle1 q-mt-sm text-weight-light font-text"
+            :class="$q.dark.isActive ? 'text-grey-4' : 'text-grey-6'">Provided a customer services portal for MultiKart
+            where they manage direct deals, accounts, users, finance etc.</div>
+          <div class="text-subtitle2 text-weight-light q-mt-md" :class="$q.dark.isActive ? 'text-white' : 'textgrey-9'">
+            Vuejs 3</div>
+          <div class="text-subtitle2 text-weight-light" :class="$q.dark.isActive ? 'text-white' : 'textgrey-9'">Quasar
+            Framework</div>
+          <q-btn unelevated no-caps class="q-px-md q-py-sm q-mt-md btn2 text-subtitle1 text-weight-light"
+            href="https://multicart.netlify.app/#/" target="_blank" icon="eva-external-link-outline"
+            label="Visit Website" />
+        </div>
+      </div>
+
+      <div class="row q-mt-md q-col-gutter-xl">
+        <div class="col-md-6 col-sm-12 col-xs-12">
+          <q-img class="borderimg shadow-5" src="~assets/weatherp.png" />
+        </div>
+        <div class="col-md-6 col-sm-12 col-xs-12">
+          <div style="text-decoration: underline;" class="text-h5 text-weight-bold font-header"
+            :class="$q.dark.isActive ? 'text-secondary' : ''">Weather
+            App</div>
+          <div class="text-subtitle1 q-mt-sm text-weight-light font-text"
+            :class="$q.dark.isActive ? 'text-grey-4' : 'text-grey-6'">This application provide the current Weather
+            information for all country's and city. If you can type any unknow city or country name then app cannot find
+            the country or city weather.</div>
+          <div class="text-subtitle2 text-weight-light q-mt-md" :class="$q.dark.isActive ? 'text-white' : 'textgrey-9'">
+            Vuejs 3</div>
+          <div class="text-subtitle2 text-weight-light" :class="$q.dark.isActive ? 'text-white' : 'textgrey-9'">
+            Weather
+            Api</div>
+          <div class="text-subtitle2 text-weight-light" :class="$q.dark.isActive ? 'text-white' : 'textgrey-9'">Quasar
+            Framework</div>
+          <q-btn unelevated no-caps class="q-px-md q-py-sm q-mt-md btn2 text-subtitle1 text-weight-light"
+            href="https://quasarweather.netlify.app/#/" target="_blank" icon="eva-external-link-outline"
+            label="Visit Website" />
+        </div>
+      </div>
+    </div>
+    <!-- ------------------------------------------------- -->
     <FooterComponent />
-
-
-    <!-- </q-img> -->
   </q-page>
 </template>
 
@@ -243,7 +332,6 @@ const card = [
   },
 ]
 import { ref } from 'vue'
-// import CarousalComponent from 'src/components/CarousalComponent.vue'
 import FooterComponent from 'src/components/FooterComponent.vue';
 
 export default {
