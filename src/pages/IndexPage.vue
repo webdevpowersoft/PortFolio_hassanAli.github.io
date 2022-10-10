@@ -368,5 +368,8 @@ export default {
   border: 2px solid #854fee;
   padding: 5px;
 }
+.borderimg{
+  border-radius: 20px;
+}
 </style>
 
