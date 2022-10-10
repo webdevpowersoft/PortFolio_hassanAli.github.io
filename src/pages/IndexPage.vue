@@ -193,9 +193,9 @@
       <div class="text-h4 uper q-mt-xl text-weight-bold" :class="$q.dark.isActive ? 'text-white' : 'text-black'">Team
       </div>
     </div>
-    <div class="container bg-transparent q-pt-md">
+    <!-- <div class="container bg-transparent q-pt-md">
       <CarousalComponent />
-    </div>
+    </div> -->
     <FooterComponent />
 
 
@@ -243,11 +243,11 @@ const card = [
   },
 ]
 import { ref } from 'vue'
-import CarousalComponent from 'src/components/CarousalComponent.vue'
+// import CarousalComponent from 'src/components/CarousalComponent.vue'
 import FooterComponent from 'src/components/FooterComponent.vue';
 
 export default {
-  components: { CarousalComponent, FooterComponent },
+  components: { FooterComponent },
   setup() {
     return {
       card
