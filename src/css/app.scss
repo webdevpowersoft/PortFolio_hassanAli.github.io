@@ -1,0 +1,69 @@
+// app global css in SCSS form
+.container {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+@media (min-width: 768px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+.font-header {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.font-text {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+.borderblog {
+  border-bottom: 2px solid;
+}
+.borderblogmobile {
+  border-bottom: 2px solid;
+  width: 160px;
+  margin-left: 10px;
+}
+.uper {
+  text-transform: uppercase;
+}
+.btn1 {
+  background: linear-gradient(to right, #4458dc 0%, #854fee 100%);
+  color: white;
+}
+.btn2 {
+  background: linear-gradient(to right, #4458dc 0%, #854fee 100%);
+  color: white;
+}
+.btn1:hover {
+  box-shadow: 4px 4px 5px #854fee;
+  transition: 1s;
+}
+.btn2:hover {
+  box-shadow: 3px 3px 5px #854fee;
+  transition: 1s;
+}
+.space {
+  letter-spacing: 5px;
+}
+.logo {
+  display: block;
+  text-indent: -9999px;
+  width: 100px;
+  height: 70px;
+  background: url(assets/logo.svg);
+  background-size: 100px 70px;
+  fill: red;
+}
+//Text family
+//font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
