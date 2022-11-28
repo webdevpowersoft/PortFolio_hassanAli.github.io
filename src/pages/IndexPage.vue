@@ -17,7 +17,8 @@
           <div class="q-mt-xl q-gutter-lg">
             <q-btn unelevated class="q-px-xl q-py-sm btn1 text-subtitle1 text-weight-bold" to="/contact"
               label="Hire Me" />
-            <q-btn unelevated class="q-px-xl q-py-sm btn2 text-subtitle1 text-weight-bold" label="Get CV" />
+            <q-btn unelevated :href="download_img" download="Hassan_Cv"
+              class="q-px-xl q-py-sm btn2 text-subtitle1 text-weight-bold" label="Get CV" />
           </div>
         </div>
       </div>
@@ -42,7 +43,8 @@
           <div class="q-mt-xl q-mb-md q-gutter-lg">
             <q-btn unelevated class="q-px-lg q-py-sm btn1 text-subtitle1 text-weight-bold" to="/contact"
               label="Hire Me" />
-            <q-btn unelevated class="q-px-lg q-py-sm btn2 text-subtitle1 text-weight-bold" label="Get CV" />
+            <q-btn unelevated :href="download_img" download="Hassan_Cv" label="get cv"
+              class="q-px-lg q-py-sm btn2 text-subtitle1 text-weight-bold" />
           </div>
         </div>
       </div>
@@ -71,7 +73,9 @@
             to
             build real world applications.
           </div>
-          <q-btn unelevated class="q-px-xl q-mt-md btn2 text-subtitle1 text-weight-bold q-py-sm" label="Download CV" />
+
+          <q-btn unelevated :href="download_img" download="Hassan_Cv"
+            class="q-px-xl q-mt-md btn2 text-subtitle1 text-weight-bold q-py-sm" label="Download CV" />
         </div>
       </div>
     </div>
@@ -93,7 +97,8 @@
             to
             build real world applications.
           </div>
-          <q-btn unelevated class="q-px-md q-mt-md btn2 text-subtitle1 text-weight-bold q-py-sm" label="Download CV" />
+          <q-btn unelevated class="q-px-md q-mt-md btn2 text-subtitle1 text-weight-bold q-py-sm" :href="download_img"
+            download="Hassan_Cv" label="Download CV" />
         </div>
       </div>
       <div class="col-md-6 col-sm-12 col-xs-12 q-mt-md">
@@ -168,21 +173,21 @@
             <q-img width="80px" :src="item.src" />
           </div>
           <q-card-section>
-            <div class="text-h6 text-center ">{{item.title}}</div>
+            <div class="text-h6 text-center ">{{ item.title }}</div>
             <div class="q-mt-md zoom font-text">
-              <q-icon class="q-mr-md" size="sm" name="eva-award-outline" /> {{item.name1}}
+              <q-icon class="q-mr-md" size="sm" name="eva-award-outline" /> {{ item.name1 }}
             </div>
             <div class="q-mt-md zoom">
-              <q-icon class="q-mr-md" size="sm" name="eva-award-outline" /> {{item.name2}}
+              <q-icon class="q-mr-md" size="sm" name="eva-award-outline" /> {{ item.name2 }}
             </div>
             <div class="q-mt-md zoom">
-              <q-icon class="q-mr-md" size="sm" name="eva-award-outline" /> {{item.name3}}
+              <q-icon class="q-mr-md" size="sm" name="eva-award-outline" /> {{ item.name3 }}
             </div>
             <div class="q-mt-md zoom">
-              <q-icon class="q-mr-md" size="sm" name="eva-award-outline" /> {{item.name4}}
+              <q-icon class="q-mr-md" size="sm" name="eva-award-outline" /> {{ item.name4 }}
             </div>
             <div class="q-mt-md zoom">
-              <q-icon class="q-mr-md" size="sm" name="eva-award-outline" /> {{item.name5}}
+              <q-icon class="q-mr-md" size="sm" name="eva-award-outline" /> {{ item.name5 }}
             </div>
           </q-card-section>
         </q-card>
@@ -338,8 +343,13 @@ export default {
   components: { FooterComponent },
   setup() {
     return {
-      card
+      card,
     };
+  },
+  data() {
+    return {
+      download_img: require('assets/hassan_cv.jpg')
+    }
   },
 }
 </script>
@@ -368,7 +378,8 @@ export default {
   border: 2px solid #854fee;
   padding: 5px;
 }
-.borderimg{
+
+.borderimg {
   border-radius: 20px;
 }
 </style>
