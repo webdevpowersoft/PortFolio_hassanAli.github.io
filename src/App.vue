@@ -4,7 +4,6 @@
 
 <script>
 import { Loading, QSpinnerPuff } from "quasar";
-// import { LoadingBar } from "quasar";
 export default {
   name: 'app',
   setup() {
